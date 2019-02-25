@@ -11,7 +11,7 @@ import QuizQuestionButton from './QuizQuestionButton.js'
 class QuizQuestion extends Component{
 
     handleClick(buttonText){
-        if(buttonText === this.props.answer){
+        if(buttonText === this.props.quiz_question.answer){
             this.props.showNextQuestionHandler();
         }
     }
